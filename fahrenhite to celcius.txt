@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    //Write your code here
+   int S,E,G,C,P,i,Q;
+	cin >> S;
+	cin >> E ;
+	cin >> G ;
+	P = ((E-S)/G)+1;
+	
+	for(i=1;i<=P;i++){
+	    S = S;
+	    Q = S +(i-1)*G;
+	    C = ((Q-32)*5/9);
+	    cout << Q<<" "<< C << endl;
+	}
+    return 0;
+}
